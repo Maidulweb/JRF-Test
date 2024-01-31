@@ -123,11 +123,12 @@ export default {
               </div>
             </div>
             <div class="basic-information">
-              <div class="d-flex justify-content-between">
-                <h5>Basic Information</h5>
-                <span>+</span>
+              <div
+                class="d-flex justify-content-between basic-information-header"
+              >
+                <h4 class="mb-0">Basic Information</h4>
+                <span><i class="fa-solid fa-pen-to-square"></i></span>
               </div>
-              <hr />
               <div class="basic-information-body">
                 <div class="row">
                   <div class="col-md-6">
@@ -160,11 +161,12 @@ export default {
               </div>
             </div>
             <div class="address-information">
-              <div class="d-flex justify-content-between">
-                <h5>Address Information</h5>
-                <span>+</span>
+              <div
+                class="d-flex justify-content-between address-information-header"
+              >
+                <h4>Address Information</h4>
+                <span><i class="fa-solid fa-pen-to-square"></i></span>
               </div>
-              <hr />
               <div class="address-information-body">
                 <div class="row">
                   <div class="col-md-4">
@@ -216,13 +218,14 @@ export default {
                 </div>
               </div>
             </div>
-            <div class="social-profile">
-              <div class="d-flex justify-content-between">
-                <h5>Social Profile</h5>
-                <span>+</span>
+            <div class="social-information">
+              <div
+                class="d-flex justify-content-between social-information-header"
+              >
+                <h4>Social Profile</h4>
+                <span><i class="fa-solid fa-pen-to-square"></i></span>
               </div>
-              <hr />
-              <div class="basic-information-body">
+              <div class="social-information-body">
                 <div class="row">
                   <div class="col-md-6">
                     <h6>Facebook</h6>
@@ -279,7 +282,7 @@ export default {
 .profile-photo h4,
 .resume-upload h4 {
   border-bottom: 2px solid #d9d9d9;
-  padding: 10px 0 10px 20px;
+  padding: 20px 0 10px 20px;
 }
 .profile-photo-form {
   padding: 5px 20px 15px 20px;
@@ -321,5 +324,35 @@ export default {
 }
 .all-resume-upload {
   padding: 6px 20px;
+}
+/* Basic Information */
+.basic-information,
+.address-information,
+.social-information {
+  margin-top: 30px;
+  background: #fff;
+  border-radius: 8px;
+}
+.basic-information-header,
+.address-information-header,
+.social-information-header {
+  border-bottom: 2px solid #d9d9d9;
+  padding: 20px 25px;
+}
+.basic-information-header span i,
+.address-information-header span i,
+.social-information-header span i {
+  color: #be1e2d;
+}
+
+.basic-information-body,
+.address-information-body,
+.social-information-body {
+  padding: 20px 0 10px 20px;
+}
+.basic-information-body h6,
+.address-information-body h6,
+.social-information-body h6 {
+  font-weight: 600;
 }
 </style>
