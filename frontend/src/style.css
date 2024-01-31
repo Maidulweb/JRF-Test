@@ -2,9 +2,13 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f7f7f7;
+  background-color: #f7f7f7 !important;
 }
 
 #app {
   font-family: "Inter", sans-serif;
+}
+p {
+  font-size: 14px;
+  line-height: 19.36px;
 }

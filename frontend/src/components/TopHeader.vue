@@ -1,23 +1,21 @@
-<script></script>
+<script setup></script>
 
 <template>
   <div class="top-header">
-    <div class="container">
-      <div class="container-fluid">
-        <div class="d-flex justify-content-between">
-          <div class="header-left">
-            <ul>
-              <li><a href="">JOBS</a></li>
-              <li><a href="">MY PAGE</a></li>
-              <li><a href="">EMPLOYER SERVICES</a></li>
-              <li><a class="post-a-job" href="">POST A JOB</a></li>
-            </ul>
-          </div>
-          <div class="header-right">
-            <div class="header-right-body d-flex">
-              <a class="english" href="">ENG</a>
-              <a class="japan" href="">日本語</a>
-            </div>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between">
+        <div class="header-left">
+          <ul>
+            <li><a href="">JOBS</a></li>
+            <li><a href="">MY PAGE</a></li>
+            <li><a href="">EMPLOYER SERVICES</a></li>
+            <li><a class="post-a-job" href="">POST A JOB</a></li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <div class="header-right-body d-flex">
+            <a class="english" href="">ENG</a>
+            <a class="japan" href="">日本語</a>
           </div>
         </div>
       </div>
@@ -28,6 +26,7 @@
 <style scoped>
 .top-header {
   background-color: #be1e2d;
+  padding: 0 20px;
 }
 .header-left ul {
   padding: 0;

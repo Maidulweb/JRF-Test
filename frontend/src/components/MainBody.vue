@@ -4,17 +4,17 @@ import LeftSidebar from "./LeftSidebar.vue";
 </script>
 
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-3">
         <LeftSidebar />
       </div>
-      <div class="col-md-10">
+      <div class="col-md-9">
         <div class="row">
-          <div class="col-md-10">
+          <div class="col-md-9">
             <div class="middle-body">
               <div class="information-slogan">
-                <h2>My Resume</h2>
+                <h4 class="mb-1">My Resume</h4>
                 <p>Update your profile with your current status</p>
               </div>
               <div class="information">
@@ -22,7 +22,7 @@ import LeftSidebar from "./LeftSidebar.vue";
               </div>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-3">
             <div class="progress blue">
               <span class="progress-left">
                 <span class="progress-bar"></span>
@@ -42,11 +42,15 @@ import LeftSidebar from "./LeftSidebar.vue";
   </div>
 </template>
 
-<style scoped>
+<style>
+.information-slogan {
+  padding-top: 30px;
+}
+
 .progress {
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
+  width: 160px;
+  height: 160px !important;
+  line-height: 100px;
   background: none;
   margin: 0 auto;
   box-shadow: none;
@@ -119,7 +123,7 @@ import LeftSidebar from "./LeftSidebar.vue";
 .progress .progress-value p {
   position: absolute;
   color: red;
-  top: 7%;
+  top: 28%;
   left: 25%;
 }
 .progress.blue .progress-bar {
