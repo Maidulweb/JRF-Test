@@ -65,7 +65,7 @@ export default {
         </div>
         <div class="information-accordion-item">
           <div
-            id="collapseOne"
+            id="collapseOne2"
             class="accordion-collapse collapse show"
             data-bs-parent="#accordionExample"
           >
@@ -74,33 +74,34 @@ export default {
                 <div class="row">
                   <div class="col-md-6">
                     <div class="profile-photo">
-                      <h6>Profile Photo</h6>
+                      <h4>Profile Photo</h4>
+                      <div class="profile-photo-form">
+                        <form>
+                          <fieldset class="upload_dropZone text-center">
+                            <legend class="visually-hidden">
+                              Image uploader
+                            </legend>
 
-                      <form>
-                        <fieldset class="upload_dropZone text-center mb-3 p-4">
-                          <legend class="visually-hidden">
-                            Image uploader
-                          </legend>
+                            <img :src="ProfilePhoto" />
 
-                          <img :src="ProfilePhoto" />
+                            <p class="small my-2">Profile photo max 2MB</p>
 
-                          <p class="small my-2">Profile photo max 2MB</p>
+                            <input
+                              id="upload_image_background"
+                              class="position-absolute invisible"
+                              type="file"
+                              multiple
+                              accept="image/jpeg, image/png, image/svg+xml"
+                            />
 
-                          <input
-                            id="upload_image_background"
-                            class="position-absolute invisible"
-                            type="file"
-                            multiple
-                            accept="image/jpeg, image/png, image/svg+xml"
-                          />
-
-                          <label
-                            class="btn btn-upload mb-3"
-                            for="upload_image_background"
-                            >Choose file(s)</label
-                          >
-                        </fieldset>
-                      </form>
+                            <label
+                              class="profile-photo-upload-btn"
+                              for="upload_image_background"
+                              >Choose file(s)</label
+                            >
+                          </fieldset>
+                        </form>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -276,42 +277,6 @@ export default {
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -336,13 +301,39 @@ export default {
 .information-accordion-btn:hover {
   border: 1px solid #e7e4e4;
   box-shadow: 1px 1px 11px 4px #e7e4e4;
-  border-radius: 4px;
+  border-radius: 8px;
   background: #fff;
   color: #bd202e;
   font-weight: 600;
 }
 .information-accordion-btn:last-child {
   border-right: 0;
+}
+.profile-photo {
+  background: #fff;
+  border-radius: 8px;
+}
+.profile-photo h4 {
+  border-bottom: 2px solid #d9d9d9;
+  padding: 10px 0 10px 20px;
+}
+.profile-photo-form {
+  padding: 5px 20px 15px 20px;
+}
+.profile-photo-form form {
+  border: 1px dotted #be1e2d;
+  padding: 20px;
+  background-color: #fff5f5;
+  border-radius: 8px;
+}
+.profile-photo-upload-btn {
+  background: #bd202e;
+  border: 1px solid #bd202e;
+  padding: 8px 40px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
 }
 .resume-upload p {
   padding-bottom: 0;
