@@ -11,266 +11,228 @@ export default {
 <template>
   <div>
     <div class="information-accordion">
-      <div class="accordion" id="accordionExample">
-        <div class="d-flex justify-content-between information-accodion-header">
-          <button
-            class="information-accordion-btn active"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseOne"
-            aria-controls="collapseOne"
-          >
-            Basic Information
-          </button>
-          <button
-            class="information-accordion-btn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo"
-            aria-expanded="false"
-            aria-controls="collapseTwo"
-          >
-            Education
-          </button>
-          <button
-            class="information-accordion-btn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Work History
-          </button>
-          <button
-            class="information-accordion-btn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Skills & Language
-          </button>
-          <button
-            class="information-accordion-btn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Portfolios & Certifications
-          </button>
-        </div>
-        <div class="information-accordion-item">
-          <div
-            id="collapseOne2"
-            class="accordion-collapse collapse show"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="information-accordion-body">
-              <div class="photo-resume">
+      <div class="d-flex justify-content-between information-accodion-header">
+        <button class="information-accordion-btn active" type="button">
+          Basic Information
+        </button>
+        <button class="information-accordion-btn" type="button">
+          Education
+        </button>
+        <button class="information-accordion-btn" type="button">
+          Work History
+        </button>
+        <button class="information-accordion-btn" type="button">
+          Skills & Language
+        </button>
+        <button class="information-accordion-btn" type="button">
+          Portfolios & Certifications
+        </button>
+      </div>
+      <div class="information-accordion-item">
+        <div>
+          <div class="information-accordion-body">
+            <div class="photo-resume">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="profile-photo">
+                    <h4>Profile Photo</h4>
+                    <div class="profile-photo-form">
+                      <form>
+                        <fieldset class="upload_dropZone text-center">
+                          <legend class="visually-hidden">
+                            Image uploader
+                          </legend>
+
+                          <img :src="ProfilePhoto" />
+
+                          <p class="small my-2">Profile photo max 2MB</p>
+
+                          <input
+                            id="upload_image_background"
+                            class="position-absolute invisible"
+                            type="file"
+                            multiple
+                            accept="image/jpeg, image/png, image/svg+xml"
+                          />
+
+                          <label
+                            class="profile-photo-upload-btn"
+                            for="upload_image_background"
+                            >Choose file(s)</label
+                          >
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="resume-upload">
+                    <h4>Resume Upload</h4>
+                    <div class="all-resume-upload">
+                      <h6>English Resume</h6>
+                      <div class="form-group">
+                        <label
+                          for="file"
+                          class="custom-file-label d-flex justify-content-between"
+                        >
+                          <span class="js-fileName">Add option</span>
+                          <span>+</span>
+                        </label>
+                        <input
+                          type="file"
+                          name="file"
+                          id="file"
+                          class="custom-file"
+                        />
+                      </div>
+                      <h6>Japanese Resume</h6>
+                      <div class="form-group">
+                        <label
+                          for="file"
+                          class="custom-file-label d-flex justify-content-between"
+                        >
+                          <span class="js-fileName">Add option</span>
+                          <span>+</span>
+                        </label>
+                        <input
+                          type="file"
+                          name="file"
+                          id="file"
+                          class="custom-file"
+                        />
+                      </div>
+                      <h6>Japanese Work History</h6>
+                      <div class="form-group">
+                        <label
+                          for="file"
+                          class="custom-file-label d-flex justify-content-between"
+                        >
+                          <span class="js-fileName">Add option</span>
+                          <span>+</span>
+                        </label>
+                        <input
+                          type="file"
+                          name="file"
+                          id="file"
+                          class="custom-file"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basic-information">
+              <div class="d-flex justify-content-between">
+                <h5>Basic Information</h5>
+                <span>+</span>
+              </div>
+              <hr />
+              <div class="basic-information-body">
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="profile-photo">
-                      <h4>Profile Photo</h4>
-                      <div class="profile-photo-form">
-                        <form>
-                          <fieldset class="upload_dropZone text-center">
-                            <legend class="visually-hidden">
-                              Image uploader
-                            </legend>
-
-                            <img :src="ProfilePhoto" />
-
-                            <p class="small my-2">Profile photo max 2MB</p>
-
-                            <input
-                              id="upload_image_background"
-                              class="position-absolute invisible"
-                              type="file"
-                              multiple
-                              accept="image/jpeg, image/png, image/svg+xml"
-                            />
-
-                            <label
-                              class="profile-photo-upload-btn"
-                              for="upload_image_background"
-                              >Choose file(s)</label
-                            >
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
                   </div>
                   <div class="col-md-6">
-                    <div class="resume-upload">
-                      <h6>Resume Upload</h6>
-                      <p>English Resume</p>
-                      <div class="form-group">
-                        <label
-                          for="file"
-                          class="custom-file-label d-flex justify-content-between"
-                        >
-                          <span class="js-fileName">Add option</span>
-                          <span>+</span>
-                        </label>
-                        <input
-                          type="file"
-                          name="file"
-                          id="file"
-                          class="custom-file"
-                        />
-                      </div>
-                      <p>English Resume</p>
-                      <div class="form-group">
-                        <label
-                          for="file"
-                          class="custom-file-label d-flex justify-content-between"
-                        >
-                          <span class="js-fileName">Add option</span>
-                          <span>+</span>
-                        </label>
-                        <input
-                          type="file"
-                          name="file"
-                          id="file"
-                          class="custom-file"
-                        />
-                      </div>
-                      <p>English Resume</p>
-                      <div class="form-group">
-                        <label
-                          for="file"
-                          class="custom-file-label d-flex justify-content-between"
-                        >
-                          <span class="js-fileName">Add option</span>
-                          <span>+</span>
-                        </label>
-                        <input
-                          type="file"
-                          name="file"
-                          id="file"
-                          class="custom-file"
-                        />
-                      </div>
-                    </div>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
+                    <h6>First Name</h6>
+                    <p>Nur</p>
                   </div>
                 </div>
               </div>
-              <div class="basic-information">
-                <div class="d-flex justify-content-between">
-                  <h5>Basic Information</h5>
-                  <span>+</span>
+            </div>
+            <div class="address-information">
+              <div class="d-flex justify-content-between">
+                <h5>Address Information</h5>
+                <span>+</span>
+              </div>
+              <hr />
+              <div class="address-information-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>First Name</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>First Name</p>
+                  </div>
                 </div>
-                <hr />
-                <div class="basic-information-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                    </div>
-                    <div class="col-md-6">
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                      <h6>First Name</h6>
-                      <p>Nur</p>
-                    </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>First Name</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>First Name</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>First Name</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>First Name</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>First Name</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>First Name</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>First Name</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>First Name</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>First Name</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>First Name</p>
                   </div>
                 </div>
               </div>
-              <div class="address-information">
-                <div class="d-flex justify-content-between">
-                  <h5>Address Information</h5>
-                  <span>+</span>
-                </div>
-                <hr />
-                <div class="address-information-body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h6>First Name</h6>
-                    </div>
-                    <div class="col-md-8">
-                      <p>First Name</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h6>First Name</h6>
-                    </div>
-                    <div class="col-md-8">
-                      <p>First Name</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h6>First Name</h6>
-                    </div>
-                    <div class="col-md-8">
-                      <p>First Name</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h6>First Name</h6>
-                    </div>
-                    <div class="col-md-8">
-                      <p>First Name</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h6>First Name</h6>
-                    </div>
-                    <div class="col-md-8">
-                      <p>First Name</p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h6>First Name</h6>
-                    </div>
-                    <div class="col-md-8">
-                      <p>First Name</p>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="social-profile">
+              <div class="d-flex justify-content-between">
+                <h5>Social Profile</h5>
+                <span>+</span>
               </div>
-              <div class="social-profile">
-                <div class="d-flex justify-content-between">
-                  <h5>Social Profile</h5>
-                  <span>+</span>
-                </div>
-                <hr />
-                <div class="basic-information-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h6>Facebook</h6>
-                      <p>Nur</p>
-                      <h6>Twitter</h6>
-                      <p>Nur</p>
-                    </div>
-                    <div class="col-md-6">
-                      <h6>Linkedin</h6>
-                      <p>Nur</p>
-                    </div>
+              <hr />
+              <div class="basic-information-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h6>Facebook</h6>
+                    <p>Nur</p>
+                    <h6>Twitter</h6>
+                    <p>Nur</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h6>Linkedin</h6>
+                    <p>Nur</p>
                   </div>
                 </div>
               </div>
@@ -309,11 +271,13 @@ export default {
 .information-accordion-btn:last-child {
   border-right: 0;
 }
-.profile-photo {
+.profile-photo,
+.resume-upload {
   background: #fff;
   border-radius: 8px;
 }
-.profile-photo h4 {
+.profile-photo h4,
+.resume-upload h4 {
   border-bottom: 2px solid #d9d9d9;
   padding: 10px 0 10px 20px;
 }
@@ -349,5 +313,13 @@ export default {
 .custom-file-label {
   background: #b3b1b1;
   height: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+.form-group {
+  margin-bottom: -3px;
+}
+.all-resume-upload {
+  padding: 6px 20px;
 }
 </style>
