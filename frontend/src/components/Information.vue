@@ -14,7 +14,7 @@ export default {
       <div class="accordion" id="accordionExample">
         <div class="d-flex justify-content-between information-accodion-header">
           <button
-            class="information-accordion-btn"
+            class="information-accordion-btn active"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseOne"
@@ -319,13 +319,30 @@ export default {
 <style>
 .information-accodion-header {
   background: #fff;
-  padding: 20px 0;
+  margin: 30px 0;
+  padding: 0 5px;
 }
 .information-accordion-btn {
   border: 0;
+  border-right: 1px solid #e7e4e4;
   background: transparent;
   font-size: 14px;
   line-height: 19.36px;
+  position: relative;
+  padding: 10px 15px;
+  margin: 8px 0;
+}
+.information-accordion-btn.active,
+.information-accordion-btn:hover {
+  border: 1px solid #e7e4e4;
+  box-shadow: 1px 1px 11px 4px #e7e4e4;
+  border-radius: 4px;
+  background: #fff;
+  color: #bd202e;
+  font-weight: 600;
+}
+.information-accordion-btn:last-child {
+  border-right: 0;
 }
 .resume-upload p {
   padding-bottom: 0;
