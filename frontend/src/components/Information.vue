@@ -127,7 +127,73 @@ export default {
                 class="d-flex justify-content-between basic-information-header"
               >
                 <h4 class="mb-0">Basic Information</h4>
-                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                <div>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary basic-modal-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Basic Information
+                          </h5>
+                        </div>
+                        <div class="modal-body">
+                          <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="inputEmail4"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="inputPassword4"
+                              />
+                            </div>
+
+                            <div class="col-12">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button type="submit" class="btn btn-primary">
+                                Sign in
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="basic-information-body">
                 <div class="row">
@@ -165,7 +231,73 @@ export default {
                 class="d-flex justify-content-between address-information-header"
               >
                 <h4>Address Information</h4>
-                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                <div>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary address-modal-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#address"
+                  >
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="address"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Address Information
+                          </h5>
+                        </div>
+                        <div class="modal-body">
+                          <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="inputEmail4"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="inputPassword4"
+                              />
+                            </div>
+
+                            <div class="col-12">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button type="submit" class="btn btn-primary">
+                                Sign in
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="address-information-body">
                 <div class="row">
@@ -223,7 +355,73 @@ export default {
                 class="d-flex justify-content-between social-information-header"
               >
                 <h4>Social Profile</h4>
-                <span><i class="fa-solid fa-pen-to-square"></i></span>
+                <div>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary social-modal-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#social"
+                  >
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="social"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Social Profiles
+                          </h5>
+                        </div>
+                        <div class="modal-body">
+                          <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="inputEmail4"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="inputPassword4"
+                              />
+                            </div>
+
+                            <div class="col-12">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button type="submit" class="btn btn-primary">
+                                Sign in
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="social-information-body">
                 <div class="row">
@@ -326,6 +524,7 @@ export default {
   padding: 6px 20px;
 }
 /* Basic Information */
+
 .basic-information,
 .address-information,
 .social-information {
@@ -339,9 +538,26 @@ export default {
   border-bottom: 2px solid #d9d9d9;
   padding: 20px 25px;
 }
-.basic-information-header span i,
-.address-information-header span i,
-.social-information-header span i {
+.basic-information-header .basic-modal-btn,
+.address-information-header .address-modal-btn,
+.social-information-header .social-modal-btn {
+  background: transparent;
+  border: 0;
+  color: #bd202e;
+}
+.btn-close {
+  color: #bd202e !important;
+}
+.basic-information-header button:hover,
+.address-information-header button:hover,
+.social-information-header button:hover {
+  background: transparent;
+  border: 0;
+  color: #bd202e;
+}
+.basic-information-header button i,
+.address-information-header button i,
+.social-information-header button i {
   color: #be1e2d;
 }
 
