@@ -157,12 +157,13 @@ export default {
                           <form class="row g-3">
                             <div class="col-md-6">
                               <label for="inputEmail4" class="form-label"
-                                >Email</label
+                                >First Name</label
                               >
                               <input
-                                type="email"
+                                type="text"
                                 class="form-control"
                                 id="inputEmail4"
+                                placeholder="Type Your First Name"
                               />
                             </div>
                             <div class="col-md-6">
@@ -170,13 +171,60 @@ export default {
                                 >Password</label
                               >
                               <input
-                                type="password"
+                                type="text"
                                 class="form-control"
                                 id="inputPassword4"
+                                placeholder="Type Your Last Name"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label"
+                                >First Name</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputEmail4"
+                                placeholder="Type Your First Name"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword4"
+                                placeholder="Type Your Last Name"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label"
+                                >First Name</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputEmail4"
+                                placeholder="Type Your First Name"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword4"
+                                placeholder="Type Your Last Name"
                               />
                             </div>
 
-                            <div class="col-12">
+                            <div
+                              class="col-12 d-flex align-content-center justify-content-center gap-4"
+                            >
                               <button
                                 type="button"
                                 class="btn btn-secondary"
