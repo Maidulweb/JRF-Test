@@ -47,7 +47,7 @@ export default {
         </div>
         <div class="col-md-2">
           <div class="footer-item">
-            <h6>About Us</h6>
+            <h6>Job Seekers</h6>
             <ul>
               <li>
                 <a href="">Home</a>
@@ -66,10 +66,10 @@ export default {
         </div>
         <div class="col-md-2">
           <div class="footer-item">
-            <h6>About Us</h6>
+            <h6>Employers</h6>
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="">Create Account or Sign in</a>
               </li>
               <li>
                 <a href="">About Us</a>
@@ -85,16 +85,16 @@ export default {
         </div>
         <div class="col-md-2">
           <div class="footer-item">
-            <h6>About Us</h6>
+            <h6>Tools & Social Media</h6>
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="">Linkedin</a>
               </li>
               <li>
-                <a href="">About Us</a>
+                <a href="">Google</a>
               </li>
               <li>
-                <a href="">Company Profile</a>
+                <a href="">Facebook</a>
               </li>
               <li>
                 <a href="">Home</a>
@@ -110,6 +110,7 @@ export default {
 .footer {
   background: #0b132e;
   padding: 20px;
+  margin-top: 40px;
 }
 .footer-item p {
   padding-top: 10px;
