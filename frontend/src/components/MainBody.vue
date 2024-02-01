@@ -1,6 +1,6 @@
 <script setup>
-import Information from "./Information.vue";
 import LeftSidebar from "./LeftSidebar.vue";
+import Information from "./Information.vue";
 </script>
 
 <template>
@@ -10,29 +10,57 @@ import LeftSidebar from "./LeftSidebar.vue";
         <LeftSidebar />
       </div>
       <div class="col-md-9">
+        <div class="information-slogan">
+          <h4 class="mb-1">My Resume</h4>
+          <p>Update your profile with your current status</p>
+        </div>
         <div class="row">
           <div class="col-md-9">
             <div class="middle-body">
-              <div class="information-slogan">
-                <h4 class="mb-1">My Resume</h4>
-                <p>Update your profile with your current status</p>
-              </div>
               <div class="information">
                 <Information />
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="progress blue">
-              <span class="progress-left">
-                <span class="progress-bar"></span>
-              </span>
-              <span class="progress-right">
-                <span class="progress-bar"></span>
-              </span>
-              <div class="progress-value">
-                <h6>90%</h6>
-                <p>Profile Strength</p>
+            <div class="profile-progress">
+              <div class="progress-n blue">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">
+                  <h6>90%</h6>
+                  <p>Profile Strength</p>
+                </div>
+              </div>
+              <div class="profile-progress-report">
+                <div class="d-flex">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="">Basic Information (15%)</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="">Education (20%)</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="">Skills & Language (35%)</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="">Work History (15%)</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="">Portfolios & Certifications (10%)</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="">References 5%</p>
+                </div>
               </div>
             </div>
           </div>
@@ -46,27 +74,32 @@ import LeftSidebar from "./LeftSidebar.vue";
 .information-slogan {
   padding-top: 30px;
 }
-
-.progress {
+.profile-progress {
+  margin-top: 30px;
+  background-color: #fff;
+  padding-top: 10px;
+  border-radius: 8px;
+}
+.progress-n {
   width: 160px;
   height: 160px !important;
   line-height: 100px;
-  background: none;
+  background: transparent;
   margin: 0 auto;
   box-shadow: none;
   position: relative;
 }
-.progress:after {
+.progress-n:after {
   content: "";
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 12px solid #fff;
+  border: 0;
   position: absolute;
   top: 0;
   left: 0;
 }
-.progress > span {
+.progress-n > span {
   width: 50%;
   height: 100%;
   overflow: hidden;
@@ -74,19 +107,21 @@ import LeftSidebar from "./LeftSidebar.vue";
   top: 0;
   z-index: 1;
 }
-.progress .progress-left {
+.progress-n .progress-left {
   left: 0;
 }
-.progress .progress-bar {
+.progress-n .progress-bar {
   width: 100%;
   height: 100%;
-  background: none;
+  background: transparent;
   border-width: 12px;
   border-style: solid;
   position: absolute;
   top: 0;
+  color: #3ab446;
 }
-.progress .progress-left .progress-bar {
+
+.progress-n .progress-left .progress-bar {
   left: 100%;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -94,10 +129,10 @@ import LeftSidebar from "./LeftSidebar.vue";
   -webkit-transform-origin: center left;
   transform-origin: center left;
 }
-.progress .progress-right {
+.progress-n .progress-right {
   right: 0;
 }
-.progress .progress-right .progress-bar {
+.progress-n .progress-right .progress-bar {
   left: -100%;
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
@@ -106,30 +141,32 @@ import LeftSidebar from "./LeftSidebar.vue";
   transform-origin: center right;
   animation: loading-1 1.8s linear forwards;
 }
-.progress .progress-value {
+.progress-n .progress-value {
   width: 90%;
   height: 90%;
   border-radius: 50%;
-  background: #ffffff;
+  background: transparent;
   position: relative;
 }
-.progress .progress-value h6 {
+.progress-n .progress-value h6 {
   position: absolute;
-  color: red;
+  color: #3ab446;
   top: 45%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 900;
 }
-.progress .progress-value p {
+.progress-n .progress-value p {
   position: absolute;
-  color: red;
-  top: 28%;
-  left: 25%;
+  color: #000;
+  top: 58%;
+  left: 21%;
 }
 .progress.blue .progress-bar {
   border-color: #d10b4f;
 }
-.progress.blue .progress-left .progress-bar {
+.progress-n.blue .progress-left .progress-bar {
   animation: loading-2 1.5s linear forwards 1.8s;
 }
 
@@ -187,5 +224,22 @@ import LeftSidebar from "./LeftSidebar.vue";
   .progress {
     margin-bottom: 20px;
   }
+}
+.profile-progress-report p {
+  padding-left: 10px;
+}
+.profile-progress-report {
+  padding-top: 10px;
+}
+.profile-progress-report i {
+  background: #3ab446;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 9px;
 }
 </style>
